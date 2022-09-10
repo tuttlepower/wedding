@@ -2,54 +2,17 @@
 <html>
 
 <head>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>🤵👰 Sari & Travis </title>
     <meta name="author" content="Travis Tuttle" />
     <meta name="keywords" content="Wedding, Columbus, Travis, Sari,  Tuttle" />
-    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <style>
-    body,
-    html {
-      height: 100%;
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .hero-image {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/background.jpg");
-      height: 100%;
-      background-position: 15% 85%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      position: relative;
-      opacity: 90%;
-    }
-
-    .hero-text {
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
-    }
-
-    .hero-text button {
-      border: none;
-      outline: 0;
-      display: inline-block;
-      padding: 10px 25px;
-      color: black;
-      background-color: #ddd;
-      text-align: center;
-      cursor: pointer;
-    }
-
-    .hero-text button:hover {
-      background-color: #555;
-      color: white;
-    }
+    
   </style>
 </head>
 
@@ -60,13 +23,31 @@
       <h1 style="font-size:50px">Travis & Sari</h1>
       <p>North Bank Park Pavilion  🏛️</p>
       <p>311 W Long St, Columbus, OH 43215 <a href="https://maps.google.com/?q=311 W Long St, Columbus, OH 43215"> 📍</a></p>
-      <p> November 5th, 2022 @ 3PM ⏰</p>
+      <p> November 5th, 2022 @ 5PM ⏰</p>
 
-      <a href="https://forms.gle/YRkeMTwbP64W75Ur6"><button>RSVP</button></a>
-      
+      <row>
+        <a href="https://forms.gle/YRkeMTwbP64W75Ur6"><button>RSVP</button></a>
+        <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1651001115536&key=GRP&app=resvlink"><button>Hotel</button></a>
+        <a onclick="document.getElementById('faq').style.display='block'"><button>FAQ</button></a>
+      </row>
     </div>
   </div>
-
+  <div id="faq" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container"> 
+        <span onclick="document.getElementById('faq').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+      </header>
+      <div class="w3-container">
+        <p>No Kids</p>
+        <p>Location</p>
+        <p>Parking</p>
+        <p>Plus One</p>
+        <p>Attire</p>
+        <p>Transport</p>
+      </div>
+    </div>
+  </div>
 
 </body>
 
