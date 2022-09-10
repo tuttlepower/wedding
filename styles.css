@@ -39,3 +39,7 @@ body,
       background-color: #555;
       color: white;
     }
+    .btn-space {
+      margin-right: 5px;
+      margin-bottom: 5px !important;
+  }

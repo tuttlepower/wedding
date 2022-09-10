@@ -1,54 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>🤵👰 Sari & Travis </title>
     <meta name="author" content="Travis Tuttle" />
     <meta name="keywords" content="Wedding, Columbus, Travis, Sari,  Tuttle" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-  <style>
-    
-  </style>
 </head>
 
 <body>
-
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:50px">Travis & Sari</h1>
-      <p>North Bank Park Pavilion  🏛️</p>
-      <p>311 W Long St, Columbus, OH 43215 <a href="https://maps.google.com/?q=311 W Long St, Columbus, OH 43215"> 📍</a></p>
-      <p> November 5th, 2022 @ 5PM ⏰</p>
-
-      <row>
-        <a href="https://forms.gle/YRkeMTwbP64W75Ur6"><button>RSVP</button></a>
-        <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1651001115536&key=GRP&app=resvlink"><button>Hotel</button></a>
-        <a onclick="document.getElementById('faq').style.display='block'"><button>FAQ</button></a>
-      </row>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Travis & Sari</h1>
+            <h4>North Bank Park Pavilion 🏛️</h4>
+            <h4>311 W Long St, Columbus, OH 43215
+                <a href="https://maps.google.com/?q=311 W Long St, Columbus, OH 43215" target="_blank">📍</a></h4>
+            <h4> November 5th, 2022 @ 5PM ⏰</h4>
+            <row class="container">
+                <div class="row">
+                <a href="https://forms.gle/YRkeMTwbP64W75Ur6" target="_blank">
+                    <button type="button" class="btn btn-rounded btn-space">RSVP</button></a>
+                <a href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1651001115536&key=GRP&app=resvlink" target="_blank">
+                    <button type="button" class="btn btn-rounded btn-space">Hotel</button></a>
+                <a onclick="document.getElementById('faq').style.display='block'">
+                    <button type="button" class="btn btn-rounded btn-space" data-toggle="modal" data-target="#faq">FAQ</button></a>
+            </div>
+        </row>
+        </div>
     </div>
-  </div>
-  <div id="faq" class="w3-modal">
-    <div class="w3-modal-content">
-      <header class="w3-container"> 
-        <span onclick="document.getElementById('faq').style.display='none'" 
-        class="w3-button w3-display-topright">&times;</span>
-      </header>
-      <div class="w3-container">
-        <p>No Kids</p>
-        <p>Location</p>
-        <p>Parking</p>
-        <p>Plus One</p>
-        <p>Attire</p>
-        <p>Transport</p>
-      </div>
     </div>
-  </div>
 
+    <!-- Modal -->
+    <div class="modal fade" id="faq" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close btn-lg" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">FAQ</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                        Parking</a>
+                                </h4>
+                            </div>
+                            <div id="collapse2" class="panel-collapse collapse">
+                                <a href="https://goo.gl/maps/evtAKs8QiUphFN2DA" target="_blank">
+                                    <p class="panel-body">Neil Avenue Parking Garage</p>
+                                </a>
+                                <img src="img/map.png" alt="map" width="100%">
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                        Plus One</a>
+                                </h4>
+                            </div>
+                            <div id="collapse3" class="panel-collapse collapse">
+                                <div class="panel-body">Due to the size of the venue, please refrain from bringing a
+                                    plus one.</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse31">
+                                        Chlidren</a>
+                                </h4>
+                            </div>
+                            <div id="collapse31" class="panel-collapse collapse">
+                                <div class="panel-body">Though we love your little ones, due to the size of the venue,
+                                    and the nature of the event please refrain from bringing children.</div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                        Attire</a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">Business Casual 😎</div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
-
 </html>
